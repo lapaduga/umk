@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./template/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./template/styles/style.css">
+    <title>ООО "УМК" | Корзина</title>
+  </head>
+  <body> 
+    <div class="wrapper">
+      <header class="header lock-padding">
+        <div class="container"> 
+          <div class="header__body"> <a class="header__logo logo" href="index.html"> 
+              <div class="header__image logo__image"><img src="./template/images/logo.webp" alt=""></div><span>торговый дом</span></a>
+            <div class="header__menu menu"> 
+              <nav class="menu__body"> 
+                <ul class="menu__list"> 
+                  <li> <a class="menu__link" href="index.html">главная</a></li>
+                  <li> <a class="menu__link" href="categories.html">продукция</a>
+                    <div class="menu__sub-list-wrap">
+                      <div class="menu__sub-list"> 
+                        <div class="menu__sub-list-body"> 
+                          <div class="menu__sub-item sub-item">
+                            <div class="sub-item__text">
+                              <div class="sub-item__heading">Листовой металлопрокат</div><a class="sub-item__link" href="catalog.html">в каталог</a>
+                            </div>
+                            <div class="sub-item__image"> <img src="./template/images/01.webp" alt=""></div>
+                          </div>
+                          <div class="menu__sub-item sub-item">
+                            <div class="sub-item__text">
+                              <div class="sub-item__heading">Трубный металлопрокат</div><a class="sub-item__link" href="catalog.html">в каталог</a>
+                            </div>
+                            <div class="sub-item__image"> <img src="./template/images/02.webp" alt=""></div>
+                          </div>
+                          <div class="menu__sub-item sub-item">
+                            <div class="sub-item__text">
+                              <div class="sub-item__heading">Рулонный металлопрокат</div><a class="sub-item__link" href="catalog.html">в каталог</a>
+                            </div>
+                            <div class="sub-item__image"> <img src="./template/images/03.webp" alt=""></div>
+                          </div>
+                          <div class="menu__sub-item sub-item">
+                            <div class="sub-item__text">
+                              <div class="sub-item__heading">Фасадный профиль оцинкованный</div><a class="sub-item__link" href="catalog.html">в каталог</a>
+                            </div>
+                            <div class="sub-item__image"> <img src="./template/images/04.webp" alt=""></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li> <a class="menu__link" href="articles.html">статьи</a></li>
+                  <li> <a class="menu__link" href="contacts.html">контакты</a></li>
+                  <li> <a class="menu__link menu__link--cart _active" href="cart.html">корзина<span class="menu__amount">2</span></a></li>
+                </ul>
+              </nav>
+              <div class="menu__close-area"></div>
+            </div><a class="header__phone" href="tel:+73512252174">
+              <div class="header__icon"><img src="./template/images/icon.svg" alt=""></div><span>+7(351) 225-21-74</span></a><a class="header__btn btn-black popup-link" href="#feedback-popup"> <span>Обратная связь</span></a>
+            <div class="header__burger"> <span> </span></div>
+          </div>
+        </div>
+      </header>
+      <main class="main"> 
+        <div class="head"> 
+          <div class="container"> 
+            <div class="head__body"> 
+              <div class="cart__breadcrumbs breadcrumbs">
+                <ul class="breadcrumbs__list"> 
+                  <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="index.html">Главная</a></li>
+                  <li class="breadcrumbs__item">корзина</li>
+                </ul>
+              </div>
+              <div class="cart__heading heading">корзина</div>
+            </div>
+          </div>
+        </div>
+        <div class="cart">	
+          <div class="container"> 
+            <div class="cart__body"> 
+              <div class="cart__amount">2 товара</div>
+              <div class="cart__buttons"> <a class="cart__btn btn-black" href="catalog.html"><span>вернуться в каталог</span></a><a class="cart__btn btn-black" href="#">очистить корзину</a></div>
+              <div class="cart__table table-cart">
+                <div class="table-cart__head">
+                  <div class="table-cart__cell">Наименование</div>
+                  <div class="table-cart__cell">Количество</div>
+                  <div class="table-cart__cell">Цена</div>
+                </div>
+                <div class="table-cart__row"> 
+                  <div class="table-cart__product">
+                    <div class="table-cart__image"> <a href="#"> <img src="./template/images/cart01.webp" alt=""></a></div>
+                    <div class="table-cart__info"> <a class="table-cart__name" href="#">Оцинкованный лист</a>
+                      <div class="table-cart__size">Размер 0,7х1250х2500мм</div><a class="table-cart__del" href="#">Удалить</a>
+                    </div>
+                  </div>
+                  <div class="table-cart__quantity"> 
+                    <div class="table-cart__custom-select">
+                      <select class="table-cart__select" name="table-cart__select-1" id="table-cart__select-1">
+                        <option value="val01">5 т.</option>
+                        <option value="val02">10 т.</option>
+                        <option value="val03">15 т.</option>
+                        <option value="val04">20 т.</option>
+                      </select><span class="table-cart__custom-arrow"></span>
+                    </div>
+                  </div>
+                  <div class="table-cart__price"> 
+                    <div class="table-cart__agreement"> <span>По согласованию </span>
+                      <div class="table-cart__note">i
+                        <div class="table-cart__cloud">Окончательная стоимость на металлопрокат будет сформирована после получения нами Вашей заявки</div>
+                      </div>
+                    </div>
+                    <div class="table-cart__min">Минимальный объем заказа от 5,0 тонн</div>
+                  </div>
+                </div>
+                <div class="table-cart__row"> 
+                  <div class="table-cart__product">
+                    <div class="table-cart__image"> <a href="#"> <img src="./template/images/cart02.webp" alt=""></a></div>
+                    <div class="table-cart__info"> <a class="table-cart__name" href="#">Оцинкованный лист</a>
+                      <div class="table-cart__size">Размер 1,2х1250х2500мм</div><a class="table-cart__del" href="#">Удалить</a>
+                    </div>
+                  </div>
+                  <div class="table-cart__quantity"> 
+                    <div class="table-cart__custom-select">
+                      <select class="table-cart__select" name="table-cart__select-1" id="table-cart__select-1">
+                        <option value="val01">5 т.</option>
+                        <option value="val02">10 т.</option>
+                        <option value="val03">15 т.</option>
+                        <option value="val04">20 т.</option>
+                      </select><span class="table-cart__custom-arrow"></span>
+                    </div>
+                  </div>
+                  <div class="table-cart__price"> 
+                    <div class="table-cart__agreement"> <span>По согласованию </span>
+                      <div class="table-cart__note">i
+                        <div class="table-cart__cloud">Окончательная стоимость на металлопрокат будет сформирована после получения нами Вашей заявки</div>
+                      </div>
+                    </div>
+                    <div class="table-cart__min">Минимальный объем заказа от 5,0 тонн</div>
+                  </div>
+                </div>
+              </div>
+              <form class="cart__form form-cart" action="#">
+                <div class="form-cart__title">Заполните форму ниже</div>
+                <div class="form-cart__top">
+                  <div class="form-cart__inputs"> 
+                    <label>
+                      <input class="form-cart__input" type="text" name="company-name" placeholder="название компании">
+                    </label>
+                    <label>
+                      <input class="form-cart__input" type="text" name="inn" placeholder="ИНН организации">
+                    </label>
+                    <label>
+                      <input class="form-cart__input" type="email" name="company-email" placeholder="E-mail">
+                    </label>
+                    <label>
+                      <input class="form-cart__input" type="text" name="date" placeholder="Срок поставки">
+                    </label>
+                    <label>
+                      <input class="form-cart__input" type="text" name="amount" placeholder="объем поставки">
+                    </label>
+                    <label>
+                      <input class="form-cart__input" type="text" name="destination" placeholder="Пункт назначения">
+                    </label>
+                    <label>
+                      <textarea class="form-cart__input" name="cart-textarea" placeholder="Комментарий" id="cart-textarea"></textarea>
+                    </label>
+                  </div>
+                  <div class="form-cart__confirm"> 
+                    <div class="form-cart__amount">2 товара</div>
+                    <div class="form-cart__price">Цена: по согласованию*</div>
+                    <div class="form-cart__agreement">
+                      <label class="form-cart__label">
+                        <input class="form-cart__checkbox" type="checkbox" checked><span></span>
+                      </label><span>Понадобится доставка</span>
+                    </div>
+                    <div class="form-cart__footnote">*Окончательная стоимость на металлопрокат будет сформирована после получения нами Вашей заявки</div>
+                  </div>
+                </div>
+                <div class="form-cart__bottom">
+                  <div class="form-cart__agreement">
+                    <label class="form-cart__label">
+                      <input class="form-cart__checkbox" type="checkbox" checked><span></span>
+                    </label><span>Нажимая на кнопку, я даю согласие на обработку своих персональных данных в соответствии с <a href="#" target="_blank">пользовательским соглашением</a></span>
+                  </div>
+                  <button class="form-cart__btn btn-blue" type="submit">оформить заказ</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"> 
+        <div class="footer__container">
+          <div class="footer__body"> 
+            <div class="footer__recycling">
+              <div class="footer__text">
+                <h2 class="footer__subtitle subtitle">оставьте заявку на переработку металлопроката</h2>
+                <div class="footer__desc">Вы можете оставить заявку на переработку металлопроката в лист, штрипс, ленту по индивидуальным размерам</div>
+              </div>
+              <div class="footer__button-wrap"> <a class="footer__btn btn-black popup-link" href="#recycling-popup">заявка на переработку</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="container"> 
+          <div class="footer__main"> 
+            <div class="footer__col"> <a class="footer__logo logo" href="index.html"> 
+                <div class="footer__image logo__image"><img src="./template/images/logo.webp" alt=""></div><span>торговый дом</span></a>
+              <div class="footer__copyright">© 2021 ООО ТД УралЭнергометаллкомплект</div><a class="footer__policy" href="#">Политика конфиденциальности</a><a class="footer__agreement" href="#">Соглашение об обработке персональных данных</a>
+            </div>
+            <div class="footer__col">
+              <ul class="footer__list"> 
+                <li> <a class="footer__link" href="#">главная</a>
+                  <ul class="footer__sublist"> 
+                    <li> <a class="footer__sublink" href="#">Листовой металлопрокат</a></li>
+                    <li> <a class="footer__sublink" href="#">Трубный металлопрокат</a></li>
+                    <li> <a class="footer__sublink" href="#">Рулонный металлопрокат</a></li>
+                    <li> <a class="footer__sublink" href="#">Фасадный профиль оцинкованный</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="footer__list"> 
+                <li> <a class="footer__link" href="#">продукция</a></li>
+                <li> <a class="footer__link" href="#">статьи</a></li>
+                <li> <a class="footer__link" href="#">контакты</a></li>
+                <li> <a class="footer__link" href="#">корзина</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <div class="footer__caption">Наши контакты</div>
+              <div class="footer__contacts"> 
+                <p>Телефон: <a href="tel:+79191238477">+7 (919) 123-84-77</a></p>
+                <p>624981 Свердловская область , г. Серов , ул Гагарина 29, помещение 7. Эл. почта: <a href="mailto:umk.td@mail.ru">umk.td@mail.ru</a></p>
+                <p>Дополнительный офис: 454008 г. Челябинск, ул.Производственная 4а, офис 401.</p>
+                <p>Отдел продаж: <a href="tel:+73512252174">+7(351) 225-21-74</a>;    <a href="mailto:zakaz@uemk.ru">zakaz@uemk.ru</a>.</p>
+              </div><a class="footer__dev" href="https://creatizer.pro/ru/" target="_blank"> <span>Разработка сайта Creatizer</span><img src="./template/images/creatizer.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="popup" id="recycling-popup"> 
+      <div class="popup__body"> 
+        <div class="popup__content"> <a class="popup__close close-popup" href="#"> </a>
+          <div class="popup__title subtitle">заявка на переработку металлопроката</div>
+          <form class="popup__form" action="#">
+            <div class="popup__inputs">
+              <label>
+                <input class="popup__input" type="text" name="company-name" placeholder="название компании">
+              </label>
+              <label>
+                <input class="popup__input" type="text" name="inn" placeholder="ИНН организации">
+              </label>
+              <label>
+                <input class="popup__input" type="email" name="company-email" placeholder="E-mail">
+              </label>
+              <label>
+                <input class="popup__input" type="text" name="date" placeholder="Срок поставки">
+              </label>
+              <label>
+                <input class="popup__input" type="text" name="amount" placeholder="объем поставки">
+              </label>
+              <label>
+                <input class="popup__input" type="text" name="destination" placeholder="Пункт назначения">
+              </label>
+              <label>
+                <textarea class="popup__input" name="recycling-textarea" placeholder="Комментарий" id="recycling-textarea"></textarea>
+              </label>
+            </div>
+            <div class="popup__agreement">
+              <label class="popup__label">
+                <input class="popup__checkbox" type="checkbox" checked><span></span>
+              </label><span>Нажимая на кнопку, я даю согласие на обработку своих персональных данных в соответствии с <a href="#" target="_blank">пользовательским соглашением</a></span>
+            </div>
+            <div class="popup__bottom"> 
+              <div class="popup__recaptcha"><img src="./template/images/recaptcha.webp" alt=""></div>
+              <div class="popup__btn-wrap">
+                <button class="popup__btn btn-black" type="submit">Отправить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="feedback-popup"> 
+      <div class="popup__body"> 
+        <div class="popup__content"> <a class="popup__close close-popup" href="#"> </a>
+          <div class="popup__title subtitle">обратная связь</div>
+          <form class="popup__form" action="#">
+            <div class="popup__inputs">
+              <label>
+                <input class="popup__input" type="text" name="user-name" placeholder="Ваше имя">
+              </label>
+              <label>
+                <input class="popup__input" type="email" name="user-email" placeholder="email">
+              </label>
+              <label>
+                <textarea class="popup__input" name="feedback-textarea" placeholder="Комментарий" id="feedback-textarea"></textarea>
+              </label>
+            </div>
+            <div class="popup__agreement">
+              <label class="popup__label">
+                <input class="popup__checkbox" type="checkbox" checked><span></span>
+              </label><span>Нажимая на кнопку, я даю согласие на обработку своих персональных данных в соответствии с <a href="#" target="_blank">пользовательским соглашением</a></span>
+            </div>
+            <div class="popup__bottom"> 
+              <div class="popup__recaptcha"><img src="./template/images/recaptcha.webp" alt=""></div>
+              <div class="popup__btn-wrap">
+                <button class="popup__btn btn-black" type="submit">Отправить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+    <script src="./template/scripts/index.js"> </script>
+  </body>
+</html>

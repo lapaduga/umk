@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./template/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./template/styles/style.css">
+    <title>ООО "УМК" | Каталог продукции</title>
+  </head>
+  <body> 
+    <div class="wrapper">
+      <header class="header lock-padding">
+        <div class="container"> 
+          <div class="header__body"> <a class="header__logo logo" href="index.html"> 
+              <div class="header__image logo__image"><img src="./template/images/logo.webp" alt=""></div><span>торговый дом</span></a>
+            <div class="header__menu menu"> 
+              <nav class="menu__body"> 
+                <ul class="menu__list"> 
+                  <li> <a class="menu__link" href="index.html">главная</a></li>
+                  <li> <a class="menu__link" href="categories.html">продукция</a>
+                    <div class="menu__sub-list-wrap">
+                      <div class="menu__sub-list"> 
+                        <div class="menu__sub-list-body"> 
+                          <div class="menu__sub-item sub-item">
+                            <div class="sub-item__text">
+                              <div class="sub-item__heading">Листовой металлопрокат</div><a class="sub-item__link" href="catalog.html">в каталог</a>
+                            </div>
+                            <div class="sub-item__image"> <img src="./template/images/01.webp" alt=""></div>
+                          </div>
+                          <div class="menu__sub-item sub-item">
+                            <div class="sub-item__text">
+                              <div class="sub-item__heading">Трубный металлопрокат</div><a class="sub-item__link" href="catalog.html">в каталог</a>
+                            </div>
+                            <div class="sub-item__image"> <img src="./template/images/02.webp" alt=""></div>
+                          </div>
+                          <div class="menu__sub-item sub-item">
+                            <div class="sub-item__text">
+                              <div class="sub-item__heading">Рулонный металлопрокат</div><a class="sub-item__link" href="catalog.html">в каталог</a>
+                            </div>
+                            <div class="sub-item__image"> <img src="./template/images/03.webp" alt=""></div>
+                          </div>
+                          <div class="menu__sub-item sub-item">
+                            <div class="sub-item__text">
+                              <div class="sub-item__heading">Фасадный профиль оцинкованный</div><a class="sub-item__link" href="catalog.html">в каталог</a>
+                            </div>
+                            <div class="sub-item__image"> <img src="./template/images/04.webp" alt=""></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li> <a class="menu__link" href="articles.html">статьи</a></li>
+                  <li> <a class="menu__link" href="contacts.html">контакты</a></li>
+                  <li> <a class="menu__link menu__link--cart _active" href="cart.html">корзина<span class="menu__amount">2</span></a></li>
+                </ul>
+              </nav>
+              <div class="menu__close-area"></div>
+            </div><a class="header__phone" href="tel:+73512252174">
+              <div class="header__icon"><img src="./template/images/icon.svg" alt=""></div><span>+7(351) 225-21-74</span></a><a class="header__btn btn-black popup-link" href="#feedback-popup"> <span>Обратная связь</span></a>
+            <div class="header__burger"> <span> </span></div>
+          </div>
+        </div>
+      </header>
+      <main class="main"> 
+        <div class="shop"> 
+          <div class="container"> 
+            <div class="shop__body"> 
+              <aside class="shop__filter filter"> 
+                <div class="filter__head"> <span>Фильтры</span><a class="filter__clear" href="#">Очистить</a></div>
+                <ul class="filter__list"> 
+                  <li class="filter__item"> <span>Листовой прокат</span>
+                    <ul class="filter__sub-list">
+                      <li class="filter__sub-item">Лист оцинкованный</li>
+                      <li class="filter__sub-item">Лист холоднокатаный</li>
+                    </ul>
+                  </li>
+                  <li class="filter__item"> <span>Рулонный прокат</span>
+                    <ul class="filter__sub-list">
+                      <li class="filter__sub-item">Лента</li>
+                      <li class="filter__sub-item">Штрипс</li>
+                      <li class="filter__sub-item">Рулон оцинкованный</li>
+                      <li class="filter__sub-item">Рулон холоднокатаный</li>
+                    </ul>
+                  </li>
+                  <li class="filter__item"> <span>Трубный прокат</span>
+                    <ul class="filter__sub-list">
+                      <li class="filter__sub-item">Труба электросварная круглая</li>
+                      <li class="filter__sub-item">Труба электросварная  квадратная</li>
+                      <li class="filter__sub-item">Труба электросварная  прямоугольная</li>
+                    </ul>
+                  </li>
+                  <li class="filter__item filter__item--no-kids"> <span>Фасадный профиль оцинкованный</span></li>
+                </ul>
+                <div class="filter__slider slider"> 
+                  <div class="slider__price"> <span>Цена, ₽: </span> от <span id="min-price">1000 </span> до <span id="max-price">25000</span></div>
+                  <div class="slider__range-input" id="range-input"></div>
+                </div>
+                <div class="filter__group"> 
+                  <div class="filter__options">ГОСТ</div>
+                  <div class="filter__box"> 
+                    <input class="filter__input" type="checkbox" name="checkbox1" checked id="checkbox1">
+                    <label class="filter__label" for="checkbox1">Вариант 01</label>
+                  </div>
+                  <div class="filter__box">
+                    <input class="filter__input" type="checkbox" name="checkbox2" checked id="checkbox2">
+                    <label class="filter__label" for="checkbox2">Вариант 02</label>
+                  </div>
+                  <div class="filter__box">
+                    <input class="filter__input" type="checkbox" name="checkbox3" id="checkbox3">
+                    <label class="filter__label" for="checkbox3">Вариант 03</label>
+                  </div>
+                  <div class="filter__box">
+                    <input class="filter__input" type="checkbox" name="checkbox4" id="checkbox4">
+                    <label class="filter__label" for="checkbox4">Вариант 04</label>
+                  </div>
+                </div>
+                <div class="filter__group"> 
+                  <div class="filter__options">Размер </div>
+                  <div class="filter__box">
+                    <input class="filter__input" type="radio" name="radio" value="radio1" id="radio1">
+                    <label class="filter__label-radio" for="radio1">Вариант 01</label>
+                  </div>
+                  <div class="filter__box">
+                    <input class="filter__input" type="radio" name="radio" value="radio2" id="radio2">
+                    <label class="filter__label-radio" for="radio2">Вариант 02</label>
+                  </div>
+                  <div class="filter__box">
+                    <input class="filter__input" type="radio" name="radio" value="radio3" id="radio3">
+                    <label class="filter__label-radio" for="radio3">Вариант 03</label>
+                  </div>
+                  <div class="filter__box">
+                    <input class="filter__input" type="radio" name="radio" value="radio4" checked id="radio4">
+                    <label class="filter__label-radio" for="radio4">Вариант 04</label>
+                  </div>
+                </div>
+              </aside>
+              <div class="shop__canvas"> 
+                <form class="shop__form" action="#">
+                  <input class="shop__search" type="search" placeholder="Поиск по каталогу">
+                  <div class="shop__sorter">
+                    <select class="shop__select" id="shop__select" name="shop__select"> 
+                      <option value="increase">по возрастанию цены </option>
+                      <option value="decrease">по убыванию цены </option>
+                      <option value="date">по дате </option>
+                      <option value="size">по размеру </option>
+                    </select>
+                  </div>
+                  <div class="shop__filter-icon"> <img src="./template/images/filter.svg" alt=""></div>
+                </form>
+                <div class="shop__breadcrumbs breadcrumbs">
+                  <ul class="breadcrumbs__list"> 
+                    <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="index.html">Главная</a></li>
+                    <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="categories.html">категории продукции</a></li>
+                    <li class="breadcrumbs__item">каталог продукции</li>
+                  </ul>
+                </div>
+                <div class="shop__products"> 
+                  <div class="shop__counter">426 товаров</div>
+                  <div class="shop__items items-shop"> 
+                    <ul class="items-shop__list"> 
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card01.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card02.webp" alt="" title="Труба профильная прямоугольная по ГОСТ 8645-68"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная прямоугольная по ГОСТ 8645-68">Труба профильная прямоугольная по ГОСТ 8645-68</div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card03.webp" alt="" title="Труба стальная водогазопроводная по ГОСТ 3262-75"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба стальная водогазопроводная по ГОСТ 3262-75">Труба стальная водогазопроводная по ГОСТ 3262-75</div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card04.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card05.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card06.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card07.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card08.webp" alt="" title="Лист оцинкованный ГОСТ 14918-80"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Лист оцинкованный ГОСТ 14918-80">Лист оцинкованный ГОСТ 14918-80</div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card09.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card10.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card11.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card12.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card13.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card14.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card15.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card16.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card17.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="items-shop__item"> 
+                        <div class="items-shop__item-wrap">
+                          <div class="items-shop__image"> <a href="card.html"> <img src="./template/images/card18.webp" alt="" title="Труба профильная квадратная по ГОСТ 8639-82"></a></div>
+                          <div class="items-shop__body">
+                            <div class="items-shop__title" title="Труба профильная квадратная по ГОСТ 8639-82">Труба профильная квадратная по ГОСТ 8639-82 </div>
+                            <div class="items-shop__buttons"> <a class="items-shop__btn btn-black" href="card.html">подробнее</a><a class="items-shop__btn btn-blue cart-btn" href="cart.html">в корзину</a></div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="shop__pagination pagination"><a class="pagination__arrow" href="#"> </a>
+                    <div class="pagination__pages">1 из 9</div><a class="pagination__arrow" href="#"> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shop__foot">
+            <div class="container"> 
+              <div class="shop__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique et egestas quis ipsum suspendisse ultrices gravida. Mus mauris vitae ultricies leo. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Nunc pulvinar sapien et ligula. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Iaculis urna id volutpat lacus laoreet non curabitur gravida. A pellentesque sit amet porttitor. Morbi leo urna molestie at elementum eu facilisis sed odio. Vitae auctor eu augue ut lectus arcu. Nunc aliquet bibendum enim facilisis gravida neque convallis. Tincidunt eget nullam non nisi est sit amet facilisis magna. Mauris sit amet massa vitae tortor condimentum. Ullamcorper morbi tincidunt ornare massa eget egestas. Facilisis volutpat est velit egestas dui id. Scelerisque fermentum dui faucibus in.</p>
+                <p>Vel pharetra vel turpis nunc eget lorem dolor. Vitae auctor eu augue ut lectus. Ut enim blandit volutpat maecenas. Diam vel quam elementum pulvinar. Nulla malesuada pellentesque elit eget. Scelerisque varius morbi enim nunc. Urna condimentum mattis pellentesque id nibh tortor id. Eu consequat ac felis donec.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"> 
+        <div class="footer__container">
+          <div class="footer__body"> 
+            <div class="footer__recycling">
+              <div class="footer__text">
+                <h2 class="footer__subtitle subtitle">оставьте заявку на переработку металлопроката</h2>
+                <div class="footer__desc">Вы можете оставить заявку на переработку металлопроката в лист, штрипс, ленту по индивидуальным размерам</div>
+              </div>
+              <div class="footer__button-wrap"> <a class="footer__btn btn-black popup-link" href="#recycling-popup">заявка на переработку</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="container"> 
+          <div class="footer__main"> 
+            <div class="footer__col"> <a class="footer__logo logo" href="index.html"> 
+                <div class="footer__image logo__image"><img src="./template/images/logo.webp" alt=""></div><span>торговый дом</span></a>
+              <div class="footer__copyright">© 2021 ООО ТД УралЭнергометаллкомплект</div><a class="footer__policy" href="#">Политика конфиденциальности</a><a class="footer__agreement" href="#">Соглашение об обработке персональных данных</a>
+            </div>
+            <div class="footer__col">
+              <ul class="footer__list"> 
+                <li> <a class="footer__link" href="#">главная</a>
+                  <ul class="footer__sublist"> 
+                    <li> <a class="footer__sublink" href="#">Листовой металлопрокат</a></li>
+                    <li> <a class="footer__sublink" href="#">Трубный металлопрокат</a></li>
+                    <li> <a class="footer__sublink" href="#">Рулонный металлопрокат</a></li>
+                    <li> <a class="footer__sublink" href="#">Фасадный профиль оцинкованный</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="footer__list"> 
+                <li> <a class="footer__link" href="#">продукция</a></li>
+                <li> <a class="footer__link" href="#">статьи</a></li>
+                <li> <a class="footer__link" href="#">контакты</a></li>
+                <li> <a class="footer__link" href="#">корзина</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <div class="footer__caption">Наши контакты</div>
+              <div class="footer__contacts"> 
+                <p>Телефон: <a href="tel:+79191238477">+7 (919) 123-84-77</a></p>
+                <p>624981 Свердловская область , г. Серов , ул Гагарина 29, помещение 7. Эл. почта: <a href="mailto:umk.td@mail.ru">umk.td@mail.ru</a></p>
+                <p>Дополнительный офис: 454008 г. Челябинск, ул.Производственная 4а, офис 401.</p>
+                <p>Отдел продаж: <a href="tel:+73512252174">+7(351) 225-21-74</a>;    <a href="mailto:zakaz@uemk.ru">zakaz@uemk.ru</a>.</p>
+              </div><a class="footer__dev" href="https://creatizer.pro/ru/" target="_blank"> <span>Разработка сайта Creatizer</span><img src="./template/images/creatizer.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="popup" id="recycling-popup"> 
+      <div class="popup__body"> 
+        <div class="popup__content"> <a class="popup__close close-popup" href="#"> </a>
+          <div class="popup__title subtitle">заявка на переработку металлопроката</div>
+          <form class="popup__form" action="#">
+            <div class="popup__inputs">
+              <label>
+                <input class="popup__input" type="text" name="company-name" placeholder="название компании">
+              </label>
+              <label>
+                <input class="popup__input" type="text" name="inn" placeholder="ИНН организации">
+              </label>
+              <label>
+                <input class="popup__input" type="email" name="company-email" placeholder="E-mail">
+              </label>
+              <label>
+                <input class="popup__input" type="text" name="date" placeholder="Срок поставки">
+              </label>
+              <label>
+                <input class="popup__input" type="text" name="amount" placeholder="объем поставки">
+              </label>
+              <label>
+                <input class="popup__input" type="text" name="destination" placeholder="Пункт назначения">
+              </label>
+              <label>
+                <textarea class="popup__input" name="recycling-textarea" placeholder="Комментарий" id="recycling-textarea"></textarea>
+              </label>
+            </div>
+            <div class="popup__agreement">
+              <label class="popup__label">
+                <input class="popup__checkbox" type="checkbox" checked><span></span>
+              </label><span>Нажимая на кнопку, я даю согласие на обработку своих персональных данных в соответствии с <a href="#" target="_blank">пользовательским соглашением</a></span>
+            </div>
+            <div class="popup__bottom"> 
+              <div class="popup__recaptcha"><img src="./template/images/recaptcha.webp" alt=""></div>
+              <div class="popup__btn-wrap">
+                <button class="popup__btn btn-black" type="submit">Отправить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="feedback-popup"> 
+      <div class="popup__body"> 
+        <div class="popup__content"> <a class="popup__close close-popup" href="#"> </a>
+          <div class="popup__title subtitle">обратная связь</div>
+          <form class="popup__form" action="#">
+            <div class="popup__inputs">
+              <label>
+                <input class="popup__input" type="text" name="user-name" placeholder="Ваше имя">
+              </label>
+              <label>
+                <input class="popup__input" type="email" name="user-email" placeholder="email">
+              </label>
+              <label>
+                <textarea class="popup__input" name="feedback-textarea" placeholder="Комментарий" id="feedback-textarea"></textarea>
+              </label>
+            </div>
+            <div class="popup__agreement">
+              <label class="popup__label">
+                <input class="popup__checkbox" type="checkbox" checked><span></span>
+              </label><span>Нажимая на кнопку, я даю согласие на обработку своих персональных данных в соответствии с <a href="#" target="_blank">пользовательским соглашением</a></span>
+            </div>
+            <div class="popup__bottom"> 
+              <div class="popup__recaptcha"><img src="./template/images/recaptcha.webp" alt=""></div>
+              <div class="popup__btn-wrap">
+                <button class="popup__btn btn-black" type="submit">Отправить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+    <script src="./template/scripts/index.js"> </script>
+  </body>
+</html>
